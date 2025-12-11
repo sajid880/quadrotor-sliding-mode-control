@@ -1,0 +1,97 @@
+Panels:
+  - Class: rviz_common/Displays
+    Name: Displays
+  - Class: rviz_common/Selection
+    Name: Selection
+  - Class: rviz_common/Tool Properties
+    Name: Tool Properties
+  - Class: rviz_common/Views
+    Name: Views
+  - Class: rviz_common/Time
+    Name: Time
+
+Visualization Manager:
+  Class: ""
+  Displays:
+
+    - Name: Grid
+      Class: rviz_default_plugins/Grid
+      Enabled: true
+      Line Style: Lines
+      Color: 160;160;160
+      Cell Size: 1.0
+      Plane: XY
+
+    - Name: TF
+      Class: rviz_default_plugins/TF
+      Enabled: true
+      Show Arrows: true
+      Show Axes: true
+      Show Names: true
+
+    - Name: Drone Pose
+      Class: rviz_default_plugins/Pose
+      Enabled: true
+      Topic:
+        Value: /mavros/local_position/pose
+      Axes Length: 0.8
+      Axes Radius: 0.05
+
+    - Name: Odometry
+      Class: rviz_default_plugins/Odometry
+      Enabled: true
+      Topic:
+        Value: /mavros/local_position/odom
+      Shape: Arrow
+      Axes Length: 0.6
+      Axes Radius: 0.04
+
+    - Name: Drone Path
+      Class: rviz_default_plugins/Path
+      Enabled: true
+      Topic:
+        Value: /trajectory/path
+      Line Style: Billboards
+      Line Width: 0.13
+      Color: 255;85;0
+
+    - Name: Setpoint Path
+      Class: rviz_default_plugins/Path
+      Enabled: true
+      Topic:
+        Value: /trajectory/desired
+      Line Style: Billboards
+      Line Width: 0.12
+      Color: 0;255;255
+
+    - Name: Local Position Path
+      Class: rviz_default_plugins/Path
+      Enabled: true
+      Topic:
+        Value: /mavros/trajectory/path
+      Line Style: Billboards
+      Line Width: 0.12
+      Color: 200;200;200
+
+  Enabled: true
+  Global Options:
+    Background Color: 48;48;48
+    Fixed Frame: map
+    Frame Rate: 30
+
+  Tools:
+    - Class: rviz_default_plugins/MoveCamera
+    - Class: rviz_default_plugins/Select
+    - Class: rviz_default_plugins/Measure
+    - Class: rviz_default_plugins/FocusCamera
+    - Class: rviz_default_plugins/Orbit
+
+  Views:
+    Current:
+      Class: rviz_default_plugins/Orbit
+      Focal Point: 0, 0, 0
+      Distance: 20
+      Pitch: 0.6
+      Yaw: 1.0
+
+

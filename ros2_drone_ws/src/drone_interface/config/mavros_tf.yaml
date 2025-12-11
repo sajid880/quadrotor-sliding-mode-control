@@ -1,0 +1,26 @@
+mavros:
+  ros__parameters:
+
+    # MAVROS main frames
+    frame_id: "map"
+    fcu_frame_id: "base_link"
+
+    # Enable TF publication
+    tf:
+      send: true
+      listen: false
+
+      frames:
+        map:
+          # MAVROS will publish: map -> odom
+          parent_id: "map"
+          child_id: "odom"
+
+        odom:
+          # MAVROS will publish: odom -> base_link
+          parent_id: "odom"
+          child_id: "base_link"
+
+    local_position:
+      frame_id: "map"
+      child_frame_id: "base_link"
