@@ -461,6 +461,13 @@ $$t_s = t_0 + \frac{1}{\mu_a(1-\nu)} \ln\left(\frac{\mu_a V^{1-\nu}(t_0) + \mu_b
 
 ---
 
+## Results
+
+Follozin is the 3d trajectory obtained ater implementing our designed control 
+
+
+![3D Trajectory](Python_implement/AFONFTSMC_Results/3D_trajectory.png
+
 ## Usage Guide
 
 ### Basic Operation
