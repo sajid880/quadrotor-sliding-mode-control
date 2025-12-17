@@ -468,6 +468,14 @@ Follozin is the 3d trajectory obtained ater implementing our designed control
 
 ![3D Trajectory](Python_implement/AFONFTSMC_Results/3D_trajectory.png)
 
+![3D Trajectory](Python_implement/AFONFTSMC_Results/attitude_tracking.png)
+
+![3D Trajectory](Python_implement/AFONFTSMC_Results/control_inputs.png)
+
+![3D Trajectory](Python_implement/AFONFTSMC_Results/position_tracking.png)
+
+![3D Trajectory](Python_implement/AFONFTSMC_Results/tracking_errors.png)
+
 ## Usage Guide
 
 ### Basic Operation
